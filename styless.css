@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Irish+Grover&family=League+Script&family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./img.png/chevron.png);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 100px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px grey
+
+}
+
+.container .lado_esquerdo{
+    position: relative;
+    background: rgb(77, 77, 77);
+    padding: 40px;
+}
+
+.container .lado_direito{
+    position: relative;
+    background: rgb(241, 239, 239);
+    padding: 40px;
+}
+
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(70, 129, 184, 0.377);
+}
+
+.perfil .imagem{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil .imagem img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.perfil h2{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil h2 span .icon{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.Infocontato{
+    padding-top: 40px;
+
+}
+
+.title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.Infocontato ul{
+    position: relative;
+}
+
+.Infocontato ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.Infocontato ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: yellow;
+}
+
+.Infocontato ul li span{
+    color: white;
+    font-weight: 300;
+
+}
+
+.Formação li{
+    margin-bottom: 15px;
+
+}
+
+.Formação h5{
+    color: white;
+    font-weight: 500;
+
+}
+
+.Formação h4{
+    color: skyblue;
+    font-weight: 500;
+}
+
+.sobre{
+    margin-bottom: 50px;
+
+}
+
+.sobre:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: rosybrown;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: saddlebrown;
+}
+
+.sobre .box{
+display: flex;
+flex-direction: row;
+margin: 20px 0;
+}
+
+.sobre .box .ano{
+    min-width: 150px;
+}
+
+
+.sobre .box .ano h5{
+    text-transform: uppercase;
+    color: silver;
+    font-weight: 600;
+}
+
+
+.sobre .box .text h4{
+text-transform: uppercase;
+color: skyblue;
+font-size: 16px;
+
+}
+
+.Skills {
+    margin-bottom: 50px;
+}
+
+.hobbies a{
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+
+@media (max-widht: 1000px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-widht: 600px)
+{
+    .sobre .box{
+        flex-direction: column;
+    }
+.sobre .box .ano{
+    
+    margin-bottom: 5px;
+}
+}

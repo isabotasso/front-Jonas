@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Irish+Grover&family=League+Script&display=swap');
+
+h1{
+    font-family: 'League Script', cursive;
+    font-size: 50px;
+    font-style: oblique;
+}
+
+p, footer{
+    font-family: 'League Script', cursive;
+    font-size: 20px;
+}
+
+
+
+body {
+    background-color: rgb(23, 46, 35);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size:40px;
+    background-image: url(./img.png/beige-tiles.png);
+    
+}
+
+
+header, nav, article, footer {
+    background-color:#e9a7969a;
+    margin: 10px auto;
+    border-radius: 10px;
+    border-style: double;
+    border-width: medium;
+    
+}
+
+header, footer {
+    width: 1060px;
+}
+
+header {
+    height:100px;
+    line-height: 100px;
+    /* border-style: double;
+    border: olive;
+    border-width: medium; */
+}
+
+footer {
+    height:70px;
+    line-height: 70px;
+}
+
+nav {
+    width: 400px;
+    display: inline-block;
+    height:600px;
+    vertical-align:top;
+}
+
+article {
+    width:660px;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left: -4px;
+    height: 600px;
+
+}
+
+.imagens {
+
+    margin: 1px 2px 1px 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bordado p{
+ display: flex;
+    flex-wrap: column;
+}
+
+
+.video{
+    position: relative;
+    margin-top: auto;
+}
+
+@media (max-width: 820px){
+    header, footer{
+        width: 820px;
+    }
+}
+
+@media (max-width: 500px){
+    header, footer{
+        width: 500px;
+    }
+}
+
+@media (max-width: 820px){
+    .bordado .disco .planta .imagens{
+        width:820px;
+        display: inline-flex;
+        flex-direction: column;
+
+    }
+}
